@@ -3,13 +3,68 @@
 	<head>
 		<title>Form HTML</title>
 		<meta name="author" content="Nofri Aidil Fitra">
+		<style>
+			body{
+				background-color: #eac4d5;
+				background-image:url("01.jpg");
+				background-size: cover;
+			}
+			h1{
+				color: blue;
+				font-style:italic;
+				text-align:center;
+				font-size:45px;
+				}
+			.text-merah{
+				color: red;
+			}
+			#text-kuning{
+				color: yellow;
+			}
+			textarea,select,input[type="text"],[type="email"],[type="date"],[type="file"],[type="number"]{
+				border-radius:10px;
+				background-color:#aa80ff; 
+				color: #aa80ff;
+				padding: 10px;
+				width:90%;
+				border-color:#660033;
+			}
+			*{
+				font-color:white;
+				font-style: italic;
+				font-family: cursive;
+			}
+			table{
+				background-color:#eee6ff;
+				opacity:85%;
+			}
+			.button{
+				background-color:#80ffff;
+				padding:15px;
+				font-weight:bold;
+				border-radius:5px;
+				border-color:#004080;
+			}
+			.button:hover{
+				background-color:#80ffff;
+				padding:15px;
+				font-weight:bold;
+				border-radius:5px;
+				border-color:#004080;
+				color:red;
+			}
+		
+			
+		</style>
 	</head>
 	<body>
 		<h1>Form Pendaftaran</h1>
+		<h1 class="text-merah">Form Pendaftaran</h1>
+		<h1 id="text-kuning">Form Pendaftaran</h1>
 		<form method=""action="">
-		<table>
+			<table width="100%">
 			<tr>
-			<td valign="top">
+			<td width="50%"valign="top">
 			<fieldset>
 				<legend>Data Pribadi</legend>
 			<table>
@@ -33,7 +88,7 @@
 				<tr>
 					<td><label for="alamat">Alamat</label></td>
 					<td>:</td>
-					<td><textarea name="alamat" id="alamat" cols="30" rows="5"></textarea></td>
+					<td><textarea name="alamat" id="alamat" cols="30" rows="8"></textarea></td>
 				</tr>
 				<tr>
 					<td><label for="tglhr">Tanggal Lahir</label></td>
@@ -105,7 +160,7 @@
 				<tr>
 					<td><label for="alamata">Alamat Ayah</label></td>
 					<td>:</td>
-					<td><textarea name="alamata" id="alamata" cols="30" rows="5"></textarea></td>
+					<td><textarea name="alamata" id="alamata" cols="30" rows="4"></textarea></td>
 				</tr>
 				<tr>
 					<td><label for="notelpay">Nomor Telepon Ayah</label></td>
@@ -125,7 +180,7 @@
 				<tr>
 					<td><label for="alamati">Alamat Ibu</label></td>
 					<td>:</td>
-					<td><textarea name="alamati" id="alamati" cols="30" rows="5"></textarea></td>
+					<td><textarea name="alamati" id="alamati" cols="30" rows="4"></textarea></td>
 				</tr>
 				<tr>
 					<td><label for="notelpib">Nomor Telepon Ayah</label></td>
@@ -133,8 +188,8 @@
 					<td><input type="number" name="notelpib" id="notelpib"></td>
 				</tr>
 				<tr>
-					<td><input type="Submit" value="Simpan">
-					<input type="Reset"></td>
+					<td><input class="button" type="Submit" value="Simpan">
+					<input class="button" type="Reset"></td>
 				</tr>
 		
 			</tr>
